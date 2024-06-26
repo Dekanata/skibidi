@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Switcher</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .language-switcher {
+            text-align: center;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .language-switcher button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            margin: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        .language-switcher button:hover {
+            background-color: #0056b3;
+        }
+        .language-switcher span {
+            display: block;
+            margin: 20px 0;
+            font-size: 20px;
+        }
+        .language-switcher a {
+            color: white;
+            text-decoration: none;
+        }
+        @media (max-width: 600px) {
+            .language-switcher {
+                width: 90%;
+                padding: 20px;
+            }
+            .language-switcher button {
+                padding: 12px 25px;
+                margin: 10px;
+                font-size: 16px;
+            }
+            .language-switcher span {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="language-switcher">
+        <button><a href="english.html">English</a></button>
+        <span>or</span>
+        <button><a href="spanyol.html">Spanish</a></button>
+    </div>
+    <audio autoplay loop>
+        <source src="p.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>
